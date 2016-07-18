@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>showing value to edit</title>
+    {%load staticfiles%}
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{title}}</h1>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+   <h3 class="panel-title">post for {{object_list.title}}</h3>
+ </div>
+    <div class="panel-body">
+      <h3>{{object_list.title}}</h3>
+      <h5>{{object_list.content}}</h5>
+    </div>
+  </div>
+  <a href="/post/post_show/">GO BACK</a>
+    </div>
+  </body>
+</html>
